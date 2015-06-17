@@ -1,0 +1,19 @@
+﻿#Container {
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-color: White;
+    border-bottom: solid 10px Black;
+}
+
+
+
+#ball {
+    position: relative;
+    overflow: hidden;
+    background-color: Transparent;
+    color: red;
+    font-size: 50pt;
+    top: 450px;
+    left: 225px;
+}

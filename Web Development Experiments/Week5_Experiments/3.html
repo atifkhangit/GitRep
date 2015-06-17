@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AngularJS Controller Extended</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="JS/3.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/3.css" />
+</head>
+<body>
+    <div align="center"> <h1>Form data manipulation using AngularJS Controller</h1></div>
+    <hr />
+    <div ng-app="" ng-controller="FormController" >
+        <form>
+            <br />
+            <label>Name</label>
+            <input type="text" name="name" ng-model="newdata.name" /><br /><br />
+            <label>Email</label>
+            <input type="text" name="email" ng-model="newdata.email" /><br /><br />
+            <label>Phone</label>
+            <input type="text" name="phone" ng-model="newdata.phone" /><br />
+            <br />
+            <input type="hidden" ng-model="newdata.id" />
+            <input type="button" value="Save" ng-click="saveData()" />
+        </form>
+
+        <div class="Table">
+            <div class="Title">
+                <p>Add Information below</p>
+            </div>
+            <div class="Heading">
+                <div class="Cell">
+                    <p>Name</p>
+                </div>
+                <div class="Cell">
+                    <p>Email</p>
+                </div>
+                <div class="Cell">
+                    <p>Contact Number</p>
+                </div>
+                <div class="Cell">
+                    <p>Edit/Delete</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div ng-repeat="person in personarray">
+                <div class="Cell">{{person.name}} </div>
+                <div class="Cell">{{person.email}} </div>
+                <div class="Cell">{{person.phone}} </div>
+                <div class="Cell">
+                    <a href="#" ng-click="edit(person.id)"><input type="button" name="edit" value="Edit" /></a> |
+                    <a href="#" ng-click="delete(person.id)"><input type="button" name="delete" value="Delete" /></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <h3> Code Snippet:</h3>
+        <p><b>HTML:</b></p>
+        <code>
+            &lt;div class=&quot;row&quot;&gt;<br />
+            &lt;div ng-repeat=&quot;person in personarray&quot;&gt;<br />
+            &lt;div class=&quot;Cell&quot;&gt;{{ person.name }} &lt;/div&gt;<br />
+            &lt;div class=&quot;Cell&quot;&gt;{{ person.email }} &lt;/div&gt;<br />
+            &lt;div class=&quot;Cell&quot;&gt;{{ person.phone }} &lt;/div&gt;<br />
+            &lt;div class=&quot;Cell&quot;&gt;<br />
+
+            &lt;a href=&quot;#&quot; ng-click=&quot;edit(person.id)&quot;&gt;&lt;input type=&quot;button&quot; name=&quot;edit&quot; value=&quot;Edit&quot; /&gt;&lt;/a&gt; |<br />
+            &lt;a href=&quot;#&quot; ng-click=&quot;delete(person.id)&quot;&gt;&lt;input type=&quot;button&quot; name=&quot;delete&quot; value=&quot;Delete&quot; /&gt;&lt;/a&gt;<br />
+
+            &lt;/div&gt;
+        </code>
+        <p><b>JS for save button:</b></p>
+        <code>
+            if ($scope.newdata.id == null) { <br />
+            $scope.newdata.id = pid++; <br />
+            $scope.personarray.push($scope.newdata); <br />
+            } <br />
+            else { <br />
+            for (i in $scope.personarray) { <br />
+            if ($scope.personarray[i].id == $scope.newdata.id) { <br />
+            $scope.personarray[i] = $scope.newdata; <br />
+            }<br />
+            }<br />
+            }<br />
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment, the AngularJS controller has been used to add,edit and delete the data on HTML page using HTML form.<br />
+            The data is displayed in a table made of DIV tags. I have used a global variable called pid (person id) to keep track of data
+            added in the array of data called person.<br /> The column value for particular element in person array is extracted
+            using the names of the attributes such as name,phone,email. For each save, a new set of name,phone and email is added in the array
+            along with a new id. <br /> Each person record is edited or deleted by matching the id of the person in the array.
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week5_Experiments/3.html" target="_blank">View Source</a>
+
+    </div>
+    <div>
+        <p><h3>CSS Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week5_Experiments/CSS/3.css" target="_blank">View CSS</a>
+        
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week5_Experiments/JS/3.js" target="_blank">~/experiments/Week5_Experiments/JS/3.js</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="https://docs.angularjs.org/api/ng/directive/ngController" target="_blank">AngularJS ngController</a> <br />
+        <a href="https://docs.angularjs.org/api/ng/directive/ngRepeat" target="_blank">AngularJS ngRepeat</a>
+    </div>
+
+
+</body>
+</html>

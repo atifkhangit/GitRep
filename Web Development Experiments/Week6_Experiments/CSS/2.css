@@ -1,0 +1,26 @@
+﻿#images
+{
+  position:relative;
+  height:1024px;
+  min-height:500px;
+  margin:16px;
+  overflow:auto;
+}
+
+#smallimages
+{
+  float:left;
+  top:0px;
+}
+
+#enalrgedimages
+{
+  float:right;
+  align-self:center;
+  top:0px;
+  left: 400px;
+  background-color:white;
+  width:400px;
+  height:400px;
+  min-height:400px;	
+}

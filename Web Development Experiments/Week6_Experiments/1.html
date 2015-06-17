@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AJAX XMLHttpRequest (XHR)</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="JS/1.js"></script>
+</head>
+<body>
+    <div align="center">
+        <h1>AJAX XMLHttpRequest calls while reading a text file on server</h1>
+    </div>
+    <form name="form1" method="POST" action="">
+        <input type="BUTTON" value="Start"
+               onclick="checkReadyStates('textfile.txt')">
+    </form>
+    <div id="steps"></div>
+    <div id="filedata"></div>
+
+    <hr />
+    <div>
+        <p><b>JS:</b></p>
+        <code>
+            request = new XMLHttpRequest(); <br />
+            var steps = document.getElementById(&quot;steps&quot;); <br />
+            steps.innerHTML = &quot;1 Connection Established  &quot; + &apos;&lt;br&gt;&apos;; <br />
+            request.open(&quot;GET&quot;, url, true); <br />
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment, The background calls between client and the servers are explained. When a file on server is accessed in HTML page
+            the client sends an XMLHttpRequest to the server. <br />The readyState property changes on exchange of information between the server
+            and the client. <br />
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/1.html" target="_blank">View Source</a>
+
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/JS/1.js" target="_blank">~/experiments/Week6_Experiments/JS/1.js</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="https://msdn.microsoft.com/en-us/library/ie/hh772830(v=vs.85).aspx" target="_blank">XMLHTTPRequest (XHR) and AJAX</a> <br />
+        <a href="http://www.w3schools.com/ajax/ajax_xmlhttprequest_onreadystatechange.asp" target="_blank">onReady State Change from W3SChool</a>
+    </div>
+</body>
+</html>

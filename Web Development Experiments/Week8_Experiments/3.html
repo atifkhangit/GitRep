@@ -1,0 +1,74 @@
+﻿<html>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Accordion Menu</title>
+    <link rel="stylesheet" type="text/css" href="CSS/3.css" />
+    <script src="JS/3.js"> </script>
+</head>
+<body>
+    <div align="center">
+        <h1>Accordion Menu using jQuery</h1>
+    </div>
+    <div id="menu">
+        <a class="trigger" title="Menu1" href="#">Menu 1</a>
+        <ul class="sub">
+            <li><a href="#">Sub1</a></li>
+            <li><a href="#">Sub2</a></li>
+            <li><a href="#">Sub3</a></li>
+        </ul>
+        <a class="trigger" title="Menu2" href="#">Menu 2</a>
+        <ul class="sub">
+            <li><a href="#">Sub1</a></li>
+            <li><a href="#">Sub2</a></li>
+            <li><a href="#">Sub3</a></li>
+            <li><a href="#">Sub4</a></li>
+            <li><a href="#">Sub5</a></li>
+        </ul>
+        <a class="trigger" title="Menu3" href="#">Menu 3</a>
+        <ul class="sub">
+            <li><a href="#">Sub1</a></li>
+            <li><a href="#">Sub2</a></li>
+            <li><a href="#">Sub3</a></li>
+        </ul>
+    </div>
+    <hr />
+    <div>
+        
+        <p><b>Code Snippet:</b></p>
+        <code>
+            $(&quot;a.trigger&quot;).click(function () <br />
+            {<br />
+            $(this).next(&quot;ul.sub&quot;).slideToggle(300)<br />
+            .siblings(&apos;ul.sub:visible&apos;).slideUp(300);<br />
+            });<br />
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment,using jQuery and CSS, a vertical accordion menu has been created. The menu toggles based on the DOM
+            tree of the HTML.
+
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week8_Experiments/3.html" target="_blank">View Source</a>
+        <p><h3>CSS Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week8_Experiments/CSS/3.css" target="_blank">CSS</a>
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week8_Experiments/JS/3.js" target="_blank">JS Source</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="http://jqueryui.com/accordion/" target="_blank">jQuery Accordion</a><br />
+    </div>
+</body>
+
+</html>

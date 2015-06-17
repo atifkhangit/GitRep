@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Ajax call to Flickr image API</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="JS/Json.js"></script>
+</head>
+
+<body class="container">
+    <h1>Using Flickr API for json callback</h1>
+    <p></p>
+    <span id="fbutton" class="btn btn-primary">Fetch Northeastern University Images from Flickr!</span>
+    <p></p>
+    <div id="imgarea" class="jumbotron">
+
+    </div>
+
+    <div class="alert">
+    </div>
+    <div>
+        <p><h3>Code Snippet:</h3></p>
+        <p>
+            var fetchAPI = &apos;http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&apos;; <br />
+            $.getJSON(fetchAPI, { <br />
+            tags: &apos;Northeastern University&apos;, <br />
+            tagmode: &apos;any&apos;, <br />
+            format: &apos;json&apos; <br />
+            }, <br />
+            onSuccess);
+        </p>
+    </div>
+
+    <div>
+        <p><h3>Displaying images using Flickr API :</h3></p>
+        <p>
+            The purpose of this experiment is to display images with jSon callback using flickr api.<br />
+            The API search images for tag parameter with values Northeastern University.<br />
+            The cache response of AJAX has been disabled so that the images are not cached and everytime the API is accessed a different random <br />
+            set of images with tags "Northeaster University" are displayed
+        </p>
+    </div>
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week4_Experiments/2.html" target="_blank">View Source</a>
+    </div>
+
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week4_Experiments/JS/Json.js" target="_blank">~/experiments/Week4_Experiments/JS/Json.js</a>
+
+    </div>
+    <div style="padding-bottom:4em">
+        <p><h3>Reference</h3></p>
+        <a href="https://www.flickr.com/services/feeds/docs/photos_public/" target="_blank">Flickr Feed API</a>
+    </div>
+
+</body>
+</html>

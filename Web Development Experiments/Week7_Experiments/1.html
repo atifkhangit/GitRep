@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Static Map</title>
+    <script src="JS/1.js"></script>
+</head>
+<body>
+    <div align="center">
+        <h1>Simple Static Google Map</h1>
+    </div>
+    <div id="mp" align="center">
+        <button onclick="getLocation()">My Location Static Map</button>
+        <div id="mapspace"></div>
+    </div>
+
+    <hr />
+    <div>
+        <p><b>Code Snippet:</b></p>
+        <code>
+            var coord = loc.coords.latitude + &quot;,&quot; + loc.coords.longitude; <br />
+            var mp = &quot;http://maps.googleapis.com/maps/api/staticmap?center=&quot;+ coord + &quot;&amp;zoom=16&amp;size=400x400&amp;sensor=false&quot;;
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment,The static map API of google maps has been used. The API takes the current location and display a static map of the region with respect to the
+            coordinates obtained while getting the current location. When the button is clicked the API gets the current location generate a static map and the map
+            is displayed in the image tag.
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week7_Experiments/1.html" target="_blank">View Source</a>
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week7_Experiments/JS/1.js" target="_blank">~/experiments/Week7_Experiments/JS/1.js</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="https://developers.google.com/maps/documentation/staticmaps/" target="_blank">Google Image Map API</a><br />
+    </div>
+</body>
+</html>

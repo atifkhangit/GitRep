@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Canvas Exp2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/2.js"></script>
+    <link type="text/css" rel="stylesheet" href="CSS/2.css" />
+
+</head>
+<body>
+    <div align="center">
+        <h1>Sine wave on Canvas using jQuery</h1>
+    </div>
+    <div id="cnvblock">
+        <canvas id="cnv" width="800" height="200"></canvas>
+    </div>
+    <hr />
+    <div>
+        <p>The main formula for generating sine wave is in below code snippet.</p>
+        <p><b>Code Snippet:</b></p>
+        <code>
+            for (x = -1; x &lt;= cnv.width; x++) <br />
+            { <br />
+            y = (Math.random() * 2 + Math.cos(t + x * 0.04) * 50); <br />
+            context.lineTo(x, cnv.height * 0.6 - y); <br />
+            }
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment,A Sine wave has been generated on canvas using jQuery. The sine wave is generated using the above formula 
+            to generate lines which re displayed at regular intervals. The setInterval() method has been used to set the intervals.
+
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week8_Experiments/2.html" target="_blank">View Source</a>
+        <p><h3>CSS Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week8_Experiments/CSS/2.css" target="_blank">CSS</a>
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week8_Experiments/JS/2.js" target="_blank">JS Source</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="http://www.w3schools.com/html/html5_canvas.asp" target="_blank">W3Schools HTML5 Canvas</a><br />
+        <a href="http://www.w3schools.com/jsref/met_win_setinterval.asp" target="_blank">W3Schools setInterval</a><br />
+        <a href="http://www.intmath.com/trigonometric-graphs/1-graphs-sine-cosine-amplitude.php" target="_blank">Sine wave intmath</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dirble Radio API</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/2.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/2.css" />
+
+</head>
+<body>
+    <div align="center">
+        <h1>Get all stations for Rock category</h1>
+    </div>
+    <div align="center" id="refresh">
+        <div id="disp">
+        </div>
+    </div>
+        <br />
+    <div align="center">
+        <div>
+            <input type="submit" class="btn btn-info" id="getData" value="Get Stations">
+            <input type="submit" class="btn btn-info" id="reset" value="Reset">
+        </div>
+
+    </div>
+    
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p> This is an extension of the previous experiment. The category ID obtained from previous experiment has been used 
+            to get all the stations listed for Rock Category. For simplicity, only 10 stations have been displayed. Clicking the 'Get station' button was appending the data from subsequent API call in the existing DOM
+            tree. I resolved this by disabling the 'Get Station' on first click and re-enabling when reset is clicked. 
+        </p>
+    </div>
+    <hr />
+    <div>
+        <h3>Source Code:</h3>
+        <a href="../../fileview/Default.aspx?~/experiments/Week9_Experiments/2.html" target="_blank">View Source</a>
+        <h3>CSS Source:</h3>
+        <a href="../../fileview/Default.aspx?~/experiments/Week9_Experiments/CSS/2.css" target="_blank">CSS</a>
+    </div>
+    <div>
+        <h3>Javascript Source:</h3>
+        <a href="../../fileview/Default.aspx?~/experiments/Week9_Experiments/JS/2.js" target="_blank">JS</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="http://api.jquery.com/?s=xml" target="_blank">jQuery AJAX</a><br />
+        <a href="http://www.w3schools.com/dom/dom_nodes_get.asp" target="_blank">W3Schools</a><br />
+        <a href="http://net4.ccs.neu.edu/home/rasala/web_resource/simpleproxytool.html" target="_blank">Simple Proxy tool</a><br />
+    </div>
+</body>
+</html>

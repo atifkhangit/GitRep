@@ -1,0 +1,12 @@
+﻿#cnvblock
+{
+display:block;
+width:800px;
+height:100px;
+outline:double;
+margin-top:10px;
+margin-left:150px;
+padding-bottom:100px;
+padding-top:0px;    
+background-color:Highlight;
+}

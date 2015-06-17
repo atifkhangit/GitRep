@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple AngularJS</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+    <div align="center"><h1>Basic Angular JS directives</h1></div>
+    <div>
+        <h3>Display model data on screen:</h3>
+        <div></div>
+        <p>
+            Please enter your name:
+        </p>
+        <input type="text" ng-model="name1">
+
+        <h3>Hi {{name1}}</h3>
+        <h3 ng-show="name1">Hi {{ name1 }}</h3>
+        <h3>Description: </h3>
+        Anything entered in the text box is displayed beside "Hi".<br />
+        In the first line, the text "Hi" is hard coded and only the data entered in text field appears beside "Hi"<br />
+        In the second line, "Hi" has been set to appear along with the data entered in text field.
+
+    </div>
+    <hr />
+    <div>
+        <h3>AngularJS filter to change case of data:</h3>
+        <p>
+            Please enter your name:
+        </p>
+        <input type="text" ng-model="name2">
+
+        <h3>Hi {{ name2 }} </h3>
+        <h4>Name in lower case: {{ name2 | lowercase }}</h4>
+        <h4>Name in upper case: {{ name2 | uppercase }}</h4>
+        <h3>Description: </h3>
+        The code uses the filter attribute from AngularJS library. Usually the filter attribute is used to filter the data<br />
+        Here I have used the filter to convert data from lower to upper and upper to lower case <br />
+        The filter works without any additional javascript.
+
+    </div>
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week5_Experiments/1.html" target="_blank">View Source</a>
+        <p><h3>Reference</h3></p>
+        <a href="https://docs.angularjs.org/api/ng/filter/filter" target="_blank">AngularJS Filter</a>
+    </div>
+</body>
+</html>

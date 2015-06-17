@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AngularJS Controller</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="JS/2.js"></script>
+</head>
+
+<body>
+    <div align="center">
+        <h1>AngularJS Controller to add data dynamically on webpage</h1>
+    </div>
+    <div ng-controller="EmailController" class="ng-scope" ng-app="">
+        Please enter email id: <input type="text" ng-model="newemail">
+        <button ng-click="add()">Add</button>
+        <h3>Emails:</h3>
+        <ul>
+            <li ng-repeat="email in emails" class="ng-binding"> {{email}}</li>
+        </ul>
+
+    </div>
+    <hr />
+    <div>
+        <h3> Code Snippet:</h3>
+        <p><b>HTML:</b></p>
+        <code>
+            &lt;li ng-repeat=&quot;email in emails&quot; class=&quot;ng-binding&quot;&gt; {{email}}&lt;/li&gt;
+        </code>
+        <p><b>JS:</b></p>
+        <code>
+            $scope.emails.push($scope.newemail);<br />
+            $scope.newemail = &quot;&quot;;
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment, once the add button is clicked, the AngularJS initializes the controller "EmailController" and
+            creates and assign the $scope variable to the function that add the email id on the HTML page. <br />
+            The ng-scope attribute defines the scope of AngularJS in div of controller and ng-binding tells Angular to replace the text content of
+            the specified "li" element with the value of a email array. <br />
+            The ng-repeat attribute loops through the array of emails and return the email id's to the controller via $scope
+            which displays it on this page.
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week5_Experiments/2.html" target="_blank">View Source</a>
+       
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week5_Experiments/JS/2.js" target="_blank">~/experiments/Week5_Experiments/JS/2.js</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="https://docs.angularjs.org/api/ng/directive/ngController" target="_blank">AngularJS ngController</a> <br />
+        <a href="https://docs.angularjs.org/api/ng/directive/ngRepeat" target="_blank">AngularJS ngRepeat</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Enlarge image using javascript and XMLHTTPRequest</title>
+    <link rel="stylesheet" type="text/css" href="CSS/2.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="JS/2.js"></script>
+    <script language="JavaScript">
+        imgpreload("images/california_sealions_seals_water_mammals.jpg");
+        imgpreload("images/boat_water_blue.jpg");
+        imgpreload("images/san_diego_california_city.jpg");
+        imgpreload("images/san_diego_california_ship.jpg");
+    </script>
+</head>
+<body>
+    <div align="center">
+        <h1>Enlarge image using javascript and XMLHTTPRequest</h1>
+    </div>
+    <div id="images">
+        <div id="smallimages">
+            <p><img src="images/tn_california_sealions_seals_water_mammals.jpg" width="200" height="150" onmouseover="enlarge(this)"> </p>
+            <p><img src="images/tn_boat_water_blue.jpg" width="200" height="180" onmouseover="enlarge(this)"></p>
+            <p><img src="images/tn_san_diego_california_city.jpg" width="220" height="200" onmouseover="enlarge(this)"></p>
+            <p><img src="images/tn_san_diego_california_ship.jpg" width="220" height="300" onmouseover="enlarge(this)"></p>
+        </div>
+        <div id="enlargedimage" onclick="alert(this);">
+        </div>
+    </div>
+
+    <hr />
+    <div>
+        <p><b>JS:</b></p>
+        <code>
+            var name = element.src; <br />
+            var imgname = name.lastIndexOf(&quot;/&quot;);<br />
+
+            name = name.slice(imgname + 1);<br />
+            name = name.slice(3);<br />
+            name = &quot;images/&quot; + name;<br />
+
+            var itag = &quot;&lt;img src=&apos;&quot; + name + &quot;&apos; &gt;&quot;;<br />
+            document.getElementById(&quot;enlargedimage&quot;).innerHTML = itag;<br />
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment, Using XMLHTTPRequest, the enlarged images have been displayed. The funcationality has been acheived using AJAX asynchronous
+            call for loading the images.  The large images are already preloaded using AJAX call when the page is loaded but are not
+            displayed on the page. On page load only thumbnails are displayed on the page. When the mouse is hovered over the thumbnail
+            the original magnified image is displayed.  As per the above code snippet the image path is trimmed and thumbnail prefix is
+            trimmed to get the original image.The original image name is than passed to the dynamically generated image tag to display
+            the enlarged image.
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/2.html" target="_blank">View Source</a>
+
+        <p><h3>CSS Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/CSS/2.css" target="_blank">View CSS Source</a>
+
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/JS/2.js" target="_blank">~/experiments/Week6_Experiments/JS/2.js</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="http://www.thonky.com/javascript-and-css-guide/javascript-image-preload/" target="_blank">Pre-load Images in cache</a> <br />
+        <a href="http://www.w3schools.com/ajax/ajax_xmlhttprequest_onreadystatechange.asp" target="_blank">onReady State Change from W3SChool</a>
+    </div>
+</body>
+</html>

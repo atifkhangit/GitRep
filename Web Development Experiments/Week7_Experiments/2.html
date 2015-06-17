@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Map</title>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"> </script>
+    <script src="JS/2.js"></script>
+    <link type="text/css" rel="stylesheet" href="CSS/2.css" />
+</head>
+
+<body>
+    <div>
+        <div align="center">
+            <h1>Google map with controls</h1>
+        </div>
+        <div id="mapspace"></div>
+    </div>
+    <hr />
+    <div>
+        <p><b>JS:</b></p>
+        <code>
+            var mapFeatures = { <br />
+            center: latlon, <br />
+            zoom: 13, <br />
+            mapTypeControl: true, <br />
+            mapTypeId: google.maps.MapTypeId.ROADMAP <br />
+            };<br />
+
+            getMap = new google.maps.Map( <br />
+            document.getElementById(&quot;mapspace&quot;), mapFeatures <br />
+            ); <br />
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment,The Google map API with controls has been used. The javascript function getLocation() finds the current location coordinates and
+            pass it to map specification function mapFeatures(). The mapFeatures() function contains the specific attributes of google map API such as mapType,zoom level and other
+            navigation controls. The api marker called google.maps.Marker takes the coordiantes and pinpoint the location the map.
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week7_Experiments/2.html" target="_blank">View Source</a>
+
+        <p><h3>CSS:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week7_Experiments/CSS/2.css" target="_blank">View CSS</a>
+
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week7_Experiments/JS/2.js" target="_blank">~/experiments/Week7_Experiments/JS/2.js</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map" target="_blank">Google Maps</a> <br />
+    </div>
+
+</body>
+</html>

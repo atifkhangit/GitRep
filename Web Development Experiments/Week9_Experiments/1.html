@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dirble Radio API</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/1.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/1.css" />
+</head>
+<body>
+    <div align="center">
+        <h1>Get all radio categories</h1>
+    </div>
+    <div align="center">
+        <div>
+            <input type="button" class="btn btn-info" id="getData" value="Get Categories">
+            <input type="button" class="btn btn-info" id="reset" value="Reset">
+        </div><br />
+        <div id="disp">
+        </div>
+    </div>
+    <hr />
+    <div>
+        <p><b>Code Snippet:</b></p>
+        <code>
+            x = data.getElementsByTagName(&apos;item&apos;); <br />
+            y=[];<br />
+            for (i = 0; i &lt; x.length; i++) {<br />
+            if (x[i].getElementsByTagName(&apos;description&apos;)[0].childNodes.length==0)<br />
+            {<br />
+            y[i] = &apos;-&apos;;<br />
+            }<br />
+            else<br />
+            {<br />
+            y[i]=x[i].getElementsByTagName(&apos;description&apos;)[0].childNodes[0].nodeValue;<br />
+            }<br />
+            output += &quot;&lt;tr&gt;&lt;td&gt;&quot; +<br />
+            x[i].getElementsByTagName(&apos;id&apos;)[0].childNodes[0].nodeValue +<br />
+            &quot;&lt;/td&gt;&lt;td&gt;&quot; +<br />
+            x[i].getElementsByTagName(&apos;name&apos;)[0].childNodes[0].nodeValue +<br />
+            &quot;&lt;/td&gt;&lt;td&gt;&quot;  +<br />
+            y[i]  +<br />
+            &quot;&lt;/td&gt;&lt;tr&gt;&quot; <br />
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment, I have used internet radio API <a href="https://dirble.com/developer/api" target="_blank">Dirble</a>.
+            The response format is XML returning three fields: Category id, Category and Description.The description field in xml response has
+            many empty nodes which was causing the jquery to fail. The empty nodes have been handled by replacing the empty node data with a "-'" in jQuery.
+
+        </p>
+    </div>
+    <hr />
+    <div>
+        <h3>Source Code:</h3>
+        <a href="../../fileview/Default.aspx?~/experiments/Week9_Experiments/1.html" target="_blank">View Source</a>
+        <h3>CSS Source:</h3>
+        <a href="../../fileview/Default.aspx?~/experiments/Week9_Experiments/CSS/1.css" target="_blank">CSS</a>
+    </div>
+    <div>
+        <h3>Javascript Source:</h3>
+        <a href="../../fileview/Default.aspx?~/experiments/Week9_Experiments/JS/1.js" target="_blank">JS</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="http://api.jquery.com/?s=xml" target="_blank">jQuery AJAX</a><br />
+        <a href="http://www.w3schools.com/dom/dom_nodes_get.asp" target="_blank">W3Schools</a><br />
+        <a href="http://net4.ccs.neu.edu/home/rasala/web_resource/simpleproxytool.html" target="_blank">Simple Proxy tool</a><br />
+    </div>
+</body>
+</html>

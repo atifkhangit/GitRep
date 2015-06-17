@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML_Test</title>
+</head>
+<body>
+    <header>
+        <h2>HTML Form</h2>
+        <form>
+            <div class="row">
+                <div class="col1">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="col2">
+                    <input type="text" autofocus required id="first_name" name="first_name" placeholder="First Name" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="last_name">Last Name</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="last_name" name="last_name" placeholder="Last Name" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="col2">
+                    <label><input type="radio" name="gender" value="male" />Male</label>
+                    <label><input type="radio" name="gender" value="female" />Female</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="address" name="address" placeholder="Apt,Street" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="city">City</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="city" name="city" placeholder="Boston" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="state">State</label>
+                </div>
+                <div class="col2">
+                    <select name="state">
+                        <option>MA</option>
+                        <option>WA</option>
+                        <option>NH</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="zip">Zip</label>
+                </div>
+                <div class="col2">
+                    <input type="text" pattern="[0-9]{5}" maxlength="5" id="zip" name="zip" placeholder="02115" />
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col1">
+                    <label>Phone</label>
+                </div>
+                <div>
+                    <input type="text" pattern="[0-9]{10}" maxlength="10" id="number" name="number" placeholder="123456789" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="email_address">Email Address</label>
+                </div>
+                <div class="col2">
+                    <input type="email" autocomplete="on" required id="email_address" name="email_address" placeholder="abc@xyz.com" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="form_date">Date</label>
+                </div>
+                <div class="col2">
+                    <input type="date" id="form_date" name="form_date" />
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col1">
+                    <label for="message">Message</label>
+                </div>
+                <div class="col2">
+                    <textarea placeholder="feedback" name="message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="form_rating_range">Rating the range</label>
+                </div>
+                <div class="col2">
+                    <input type="range" min="0" max="5" id="form_rating_range" name="form_rating_range" placeholder="5" />
+                </div>
+            </div>
+           
+            <div>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </div>
+        </form>
+    </header>
+    <hr />
+    
+        <h4>Source Code:</h4>
+        <a href="../../fileview/Default.aspx?~/experiments/Week1_Experiments/3.html" target="_blank">HTML Source</a>
+    
+
+    <hr />
+</body>
+</html>
+

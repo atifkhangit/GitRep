@@ -1,0 +1,121 @@
+﻿
+
+.blockspace
+{
+	float: left;
+	width: 3%;
+}
+
+#r1c1
+{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-color:red;
+	margin-top: 10px;
+	float: left;
+	width: 45%;
+	background-color: #bbb;
+}
+
+#r1c2
+{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+     border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-color:green;
+	margin-top: 10px;
+	float: left;
+	margin-left: 3%;
+	width: 45%;
+	background-color: #bbb;
+}
+
+#r2c1
+{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+     border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-color:blue;
+	margin-top: 10px;
+	float: left;
+	margin-left: 3%;
+	width: 48%;
+	background-color: #ddd;
+}
+
+#r2c2
+{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+     border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-color:black;
+	margin-top: 10px;
+	float: left;
+	width: 20%;
+	background-color: #ddd;
+}
+
+#r2c3
+{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+     border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-color:yellow;
+	margin-top: 10px;
+	float: left;
+	margin-left: 3%;
+	width: 20%;
+	background-color: #ddd;
+}
+
+#r3c1
+{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+     border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-color:purple;
+	margin-top: 10px;
+	float: left;
+	width: 71%;
+	background-color: #bbb;
+}
+
+#r3c2
+{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+     border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-color:violet;
+	margin-top: 10px;
+	float: left;
+	margin-left: 3%;
+	width: 20%;
+	background-color: #bbb;
+}
+
+
+#multfluid{
+    height:auto;
+    width:auto;
+}
+.clearboth { clear:both; }
+
+.title
+{
+    align-self:center;
+   text-align:center;
+}
+
+.documentation{
+    float:right;
+    vertical-align:bottom;
+}
+

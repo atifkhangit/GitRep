@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery experiment</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            var head = jQuery('#fixedmenu');
+            var init = jQuery(head).offset().top;
+            jQuery.event.add(window, "scroll",
+        function () {
+            var p = jQuery(window).scrollTop();
+            jQuery(head).css('position',
+        ((p) > init) ? 'fixed' : 'static');
+            jQuery(head).css('top', ((p) > init) ? '0px' : '');
+        });
+        }); </script>
+
+</head>
+<body>
+    <div id="fixedmenu">
+        <h1>This part is static and not scrollable. This part will not disappear as you scroll down the page</h1>
+    </div>
+
+    <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, 
+    and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, 
+    or avoids pleasure itself, because it is pleasure, 
+    but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+     Nor again is there anyone who loves or pursues or desires to obtain pain of itself,
+     because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. 
+    To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? 
+    But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, 
+    or one who avoids a pain that produces no resultant pleasure?" </p>
+    <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,
+     so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; 
+    and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. '=
+    These cases are perfectly simple and easy to distinguish.
+     In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, 
+    every pleasure is to be welcomed and every pain avoided. 
+    But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. 
+    The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, 
+    or else he endures pains to avoid worse pains." </p>
+   
+    <p>Lorem ipsum dolor sit amet , consectetur adipiscing elit. Until alone basic research , 
+    welcomes the Word in the sad life I , rutrum from the just. After school easy bow . Morbi from the urn , 
+    protein ultricies receives the mourning , real estate and lay still. Proin Zen, nor bow is made to decorate ,
+     according to the wise dust in , and the price is a clinical football temperature. Now now the Moors, 
+    or put sauce pot , and sometimes thermal nor . For kids or drink , for it was said . Aeneas sem leo, get a life of mourning that ,
+     Japan is not it. Lorem ipsum dolor sit amet, in the ultrices ; Proin blandit Bureau of torment and drink . 
+    But the valley, he wishes to propaganda, and not easy to feugiat . Aenean Laoreet feugiat basketball . 
+    For the greatest freedom of localization of the arrows. Praesent pulvinar real estate developer, in the kids in the kids lorem . 
+    Bureau integer and salad. In order that the fear of a man pull the ends of the pull .</p>
+
+    <p>Donec eget turpis Planning members of the film to adorn . It's time , my throat , but the members of the employee and Nibh . 
+    There is the skirt of the earth but the sauce, or embellished from vehicles . No gate , the fear of crime is a variable, worth it for the kids , 
+    which , real estate thermal lorem dui , but pure . Tomorrow football betting to the just, the gate of the various assets. Taking a look at soccer propaganda,
+     football warm- alarm. Aenean eu sapien eget massa layer of financing . Yes, this is a very important sapien and now in the porch of the arrows . 
+    Tomorrow life, a nice temperature. Phasellus cartoon Nibh deductible . Integer of mourning , pure and thermal Bureau, 
+    the laughter of hatred than the official website , but the grief of the deposit slip felis Augus . Advantage of the skirt of us live where, 
+    and who was the protein that poverty . Us live pillow diam sit amet wants to get pregnant , it is not the advantage sapien protein.</p>
+    <p>Unfortunately, it is the gate of indoor air quality Tincidunt nor arrows . One is the almanac . Gaming quis urna antioxidants , real estate , but do sit pure . 
+    Textile freedom to everyone . But at the front desk . Unfortunately, the bow in the Performance Planning malesuada. 
+    Although the results are thermal elit quis elit. Amet, the author of the leaven of the Moors, of the ends of the earth , and that financing .
+     Until propaganda lakes, the valley, or tempor at , beef needs a bed . Now sit amet , consectetur dui molestie . Aeneas financing and pure from the arrows.</p>
+    <p>Celtics eros competition, the layer at the life of cartoon now . Aeneas nor any life . Integer lot pain or lakes set down, but now chocolate bananas . 
+    It's put a lion football warm- kids . The surety the need , a lot of the price has been said , the laughter of macro sauce base , 
+    and there is no laughter or consectetuer adipiscing was . Entrance of the pure freedom, and the most interesting and at times , Tincidunt vehicles nil. Every one as he was , 
+    does not offer a great sauce . Improvements to Vulputate neither . Mauris sit amet mi pulvinar , ultricies dui in order that, the price of temperature. 
+    Integer or information in order to hate is made financing . Gaming and sapien varius or laughter at times . Gaming is always a great , in the dictum of a lion .
+     Tomorrow in the page. Always at a temperature of at sapien id leaven . Duis a football game</p>
+    <p>They rise from the porch of the biggest Donec consectetur adipiscing elit. Ferry ferry Moors large or ullamcorper. Really fast and sometimes the throat . 
+    Tomorrow ecological diam at the jaws of the price . But the competition of the valley, and before the ultricies , mourning pure .
+     Clinical players is to say, not of mourning, from the confines of , the quiver quis felis. Retailers .
+     For the life of us live gate of players becomes thermal . But pregnant , there is a need to please , for lorem hatred, of life, of life, has been said before , my .
+     This article can help with fears and nibh ultrices , now the author of a sollicitudin . Players in the project, from nibh arrows. Even in bed eros . Easy .
+     Or make the court of a lion, I eleifend pain . But bananas dui arrows adorn the very pregnant. Unfortunately, a great malesuada drink , or put propaganda feugiat sed.</p>
+
+    <div>
+        <p><h2>Static text using jQuery:</h2></p>
+        <p>
+            The purpose of this experiment was to make header section of the page static.<br />
+            When the page is scrolled down the header part remains static irrespective of page being scrolled up or down.<br />
+            The idea behind this is to use jQuery event listener for "scroll" event. The event handler function is called when the page is scrolled up or down.
+            The div tag of header is fixed.
+        </p>
+    </div>
+
+
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week3_Experiments/3.html" target="_blank">View Source</a>
+    </div>
+
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week3_Experiments/JS/3.js" target="_blank">~/experiments/Week3_Experiments/JS/3.js</a>
+
+    </div>
+
+</body>
+</html>

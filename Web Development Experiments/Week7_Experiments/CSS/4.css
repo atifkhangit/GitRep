@@ -1,0 +1,34 @@
+﻿#widgetmain{
+    text-align:left;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:1300px;
+    background-color:#transparent;
+    border:2px solid #333333;
+}
+
+#rsswidget
+{
+    height:500px;
+}
+
+#rssOutput
+{
+    border:0;
+    padding:0; 
+    margin:0; 
+    width:1300px; 
+    height:500px;
+}
+
+#widgetbottom
+{
+    text-align:right;
+    margin-bottom:0;
+    border-top:2px solid #333333;
+}
+
+
+span{
+    font-size:70%;
+}

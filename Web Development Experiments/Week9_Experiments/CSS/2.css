@@ -1,0 +1,15 @@
+﻿table, th , td {
+    border: 2px solid;
+    padding:2px;
+    text-align:center;
+    border-collapse: collapse;
+}
+
+th{
+    background-color:grey;
+}
+tr
+{
+    background-color:ThreeDHighlight;
+}
+

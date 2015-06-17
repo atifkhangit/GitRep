@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Geocoding</title>
+    <link href="https://developers.google.com/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="JS/3.js"></script>
+    <link type="text/css" rel="stylesheet" href="CSS/3.css" />
+</head>
+<body onload="initialize()">
+    <div align="center">
+        <h1>Get Geocode for the address</h1>
+    </div>
+
+    <div>
+        <input id="address" type="text" value="Northeastern University">
+        <input type="button" value="Get Geocode" onclick="codeAddress()"><br /> <br />
+        <label>Latitude:</label><input type="text" id="lat" /> <br />
+        <label>Longitude: </label><input type="text" id="lon" /> <br />
+    </div>
+    <div id="mapspace"></div>
+    <br />
+    <hr />
+    <div>
+        <p><b>Code Snippet:</b></p>
+        <code>
+            marker = new google.maps.Marker( <br />
+            { <br />
+            map: map, <br />
+            position: results[0].geometry.location, <br />
+            draggable: true <br />
+            }); <br />
+
+            document.getElementById(&apos;lat&apos;).value = marker.getPosition().lat(); <br />
+            document.getElementById(&apos;lon&apos;).value = marker.getPosition().lng();
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment,The Google maps javascript API v3 has been used. The geocoding service of Google map API has been used to get the latitude
+            and longitude of the address entered in the text box. Also the location entered in the text box is pinpointed on the map.
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week7_Experiments/3.html" target="_blank">View Source</a>
+
+        <p><h3>CSS:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week7_Experiments/CSS/3.css" target="_blank">View CSS</a>
+
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week7_Experiments/JS/3.js" target="_blank">~/experiments/Week7_Experiments/JS/3.js</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple" target="_blank">Google Geocoding Service</a> <br />
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Animations</title>
+    <script src="JS/4.js"> </script>
+</head>
+<body>
+    <form>
+        <div>
+            <h2>Adding element on form dynamically</h2>
+            Click add button to add element on the page dynamically.
+            <br>
+            <select name="element">
+                <option value="radio">Radio</option>
+                <option value="text">Textbox</option>
+                <option value="button">Button</option>
+            </select>
+            <hr />
+
+            <input type="button" value="Add new element" onclick="add(document.forms[0].element.value)">
+
+            <span id="formspan"> </span>
+        </div>
+    </form>
+    <br /> <br /><hr />
+
+    <div>
+        <p><h2>Dynamic elements on Form:</h2></p>
+        <p>
+            The purpose of this experiment was to use jQuery to add form elements such as radio,textbox and bottons dynamically<br />
+            The elements here are identified based on the type of element.<br />
+            Any number of element can be added using the add element button.
+        </p>
+    </div>
+
+
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week3_Experiments/4.html" target="_blank">View Source</a>
+    </div>
+
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week3_Experiments/JS/4.js" target="_blank">~/experiments/Week3_Experiments/JS/4.js</a>
+
+    </div>
+
+</body>
+</html>

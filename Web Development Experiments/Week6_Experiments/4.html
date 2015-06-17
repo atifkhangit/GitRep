@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Load data from another HTML file</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="JS/4.js"></script>
+</head>
+<body>
+    <div align="center">
+    <h1>Load data from another HTML file using XMLHTTPRequest object</h1>
+    </div>
+    <form name="frm" method="POST" action="">
+        <input type="BUTTON" value="Get data of HTML file"
+               onclick="document.getElementById('displaydata').innerHTML = loadHTML('data.html');">
+    </form>
+    <div id="displaydata"></div>
+
+    <hr />
+    <div>
+        <p><b>JS:</b></p>
+        <code>
+            request.open(&quot;GET&quot;, url, false);<br />
+            request.send();<br />
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment, The XMLHTTPRequest is used to load data from another HTML file. The javascript make a synchnronous call to file on 
+            server. <br /> The server opens the html file and returns the data in form of text. The javascript then renders the data
+            in the Div tag with id "displaydata" <br /> The <b> request.send()</b> method sends the second HTML file to server and get the data of
+            second HTML file for rendering using javascript on this page.
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/4.html" target="_blank">View Source</a>
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/JS/4.js" target="_blank">~/experiments/Week6_Experiments/JS/4.js</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="https://msdn.microsoft.com/en-us/library/ie/ms535874%28v=vs.85%29.aspx" target="_blank">XHTTPRequest (XHR)</a><br />
+        <a href="http://www.w3schools.com/ajax/ajax_xmlhttprequest_onreadystatechange.asp" target="_blank">onReady State Change from W3SChool</a>
+    </div>
+
+</body>
+</html>

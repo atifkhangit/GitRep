@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>XMLHTTPRequest to load form</title>
+    <link rel="stylesheet" type="text/css" href="CSS/3.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="JS/3.js"></script>
+</head>
+<body>
+    <div align="center">
+        <h1>XMLHTTPRequest to load data form XML file into HTML form</h1>
+    </div>
+    <div align="center">
+        <form id="frm" name="frm1" method="POST" action="">
+           
+            <label id="lbl">First Name:</label>
+            <input id="txtbox" type="text" name="frstname"> <br /><br />
+            <label id ="lbl">Last Name:</label>
+            <input id="txtbox" type="text" name="lstname"><br /><br />
+            <label id="lbl">City</label>
+            <input id="txtbox" type="text" name="cit"> <br /><br />
+            <label id="lbl">State:</label>
+            <input id="txtbox" type="text" name="st"><br /><br />
+            <label id="lbl">Country:</label>
+            <input id="txtbox" type="text" name="ctry"><br /> <br />
+            <input  type="BUTTON" value="Fill Data" onclick="postXML()"> 
+            <input  type="reset" value="Clear" />
+        </form>
+    </div>
+
+    <hr />
+    <div>
+        <p><b>JS:</b></p>
+        <code>
+            document.frm1.frstname.value = doc.getElementsByTagName(&apos;fname&apos;).item(0).firstChild.data; <br />
+            document.frm1.lstname.value = doc.getElementsByTagName(&apos;lname&apos;).item(0).firstChild.data;<br />
+            document.frm1.cit.value = doc.getElementsByTagName(&apos;city&apos;).item(0).firstChild.data;<br />
+            document.frm1.st.value = doc.getElementsByTagName(&apos;state&apos;).item(0).firstChild.data;<br />
+            document.frm1.ctry.value = doc.getElementsByTagName(&apos;country&apos;).item(0).firstChild.data;<br />
+        </code>
+    </div>
+    <hr />
+    <div>
+        <h3>Description:</h3>
+        <p>
+            In this experiment, The XMLHTTPRequest is used to load data from XML file on server into form data fields. A request is created to
+            the server and then the request's readyStateChange property is used to get the XML data. The retreived XML data is then
+            placed in the respective text fields. The XML tags are accessed by <b> "doc.getElementsByTagName(&apos;fname&apos;).item(0).firstChild.data;"</b>
+            <br /> The input text are determined based on the name attribute of text field in the form.
+        </p>
+    </div>
+    <hr />
+    <div>
+        <p><h3>Source Code:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/3.html" target="_blank">View Source</a>
+
+        <p><h3>CSS Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/CSS/3.css" target="_blank">View CSS Source</a>
+
+    </div>
+    <div>
+        <p><h3>Javascript Source:</h3></p>
+        <a href="../../fileview/Default.aspx?~/experiments/Week6_Experiments/JS/3.js" target="_blank">~/experiments/Week6_Experiments/JS/3.js</a>
+
+    </div>
+    <hr />
+    <div>
+        <p><h3>Reference</h3></p>
+        <a href="http://www.w3schools.com/ajax/ajax_xmlhttprequest_onreadystatechange.asp" target="_blank">onReady State Change from W3SChool</a>
+    </div>
+
+</body>
+</html>

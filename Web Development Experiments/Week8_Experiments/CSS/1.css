@@ -1,0 +1,14 @@
+﻿#cnvblock
+{
+display:block;
+width:320px;
+height:250px;
+outline:double;
+margin-left:400px;
+background-color:Highlight;
+}
+
+#btn
+{
+    margin-left:500px;
+}

@@ -1,0 +1,6 @@
+﻿The ajax XMLHTTPRequest  has been successfully completed. This is the data from text file on the server. <br>
+The readyState codes and HTTPRequest calls initiated in background are: <br>
+1: server connection established <br>
+2: request received  <br>
+3: processing request  <br>
+4: request finished and response is ready <br> <br>
