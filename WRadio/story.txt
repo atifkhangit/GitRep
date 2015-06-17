@@ -1,0 +1,13 @@
+﻿../../story/whatisnext.htm?../project/                          What is Next?
+../../fileview/Default.aspx?~/project/Default.aspx              Home Page ASP Code
+../../fileview/Default.aspx?~/project/js/randomstations.js		Home Page JS Code
+../../fileview/Default.aspx?~/project/Genre.aspx                Genre Page ASP Code        
+../../fileview/Default.aspx?~/project/js/genredata.js           Genre Page JS code
+../../fileview/Default.aspx?~/project/SearchPage.aspx           Search Page ASP code
+../../fileview/Default.aspx?~/project/searchpage.js             Search Page JS code
+../../fileview/Default.aspx?~/project/About.html                About Page HTML Code
+../../fileview/Default.aspx?~/project/Document.html             Documentation Page
+../../fileview/Default.aspx?~/project/countries.txt             Countries data text file
+../../fileview/Default.aspx?~/project/css/menu.css              Main CSS
+../../fileview/Default.aspx?~/project/css/player.css            Player CSS
+story.txt                                                       The story file for this story.

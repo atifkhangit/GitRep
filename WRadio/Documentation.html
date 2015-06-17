@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WRadio Documentation</title>
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <style type="text/css">
+      @media screen {
+    body {
+    margin: 0;
+    padding: 0;
+    font: 16px Arial, Helvetica, sans-serif;
+    }
+    }
+
+    @media screen and (min-width: 1280px) {
+    body {
+    width: 1280px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+    #projName{
+        margin-top:6% !important;
+    }
+   .menu li  a:link
+    {
+        color:white !important;
+    }
+
+    }
+    
+        @media screen and (max-width: 420px) {
+            body {
+                max-width: 100%;
+            }
+
+            nav
+            {    
+                width:62%;
+                margin-left:-16% !important;
+            }
+
+            .menu
+            {
+                margin-left:38%;
+            }
+            h2 u
+            {
+                text-align:left !important;
+            }
+            #logo img
+   {
+       max-width:250% !important;
+   }
+            #projName{
+        margin-top:6%;
+    }
+        }
+     
+    h1{
+        text-align:center;
+    }
+    #title 
+    {   margin-right:20%;
+        align-self:center;
+        margin-left:1%;
+        color:brown;
+    }
+    #abstract,#toc,#intro,#design,#features,#fscope,#credits
+    {
+        max-width:70%;
+        float:left;
+        margin-left:12%;
+        text-align:justify;
+    }
+    
+    a
+    {
+        text-decoration:none;
+        font-weight:800;
+    }
+    #toc a
+    {
+        font: bold 24px Arial, Helvetica, sans-serif;
+    }
+   #intro,#design
+   {
+       clear:both;
+   }    
+  
+   #featureList > li
+   {
+       padding-bottom:2%;
+   }
+   #pageFooter{
+       clear:both;
+       float:left;
+       margin-left:40%;
+       font: bold 12px Arial, Helvetica, sans-serif;
+       color:green;
+   }
+   #logo{
+       float:left;
+       width:11%;
+   }
+   #logo img
+   {
+       max-width:50%;
+   }
+   #projName
+   {
+       margin-left:30%;
+   }
+
+    </style>
+</head>
+<body>
+    <div id="top-bar">
+        <div id="logo">
+            <img src="images/logo.jpg" alt="logoimage" width="100" height="50" />
+        </div>
+        <nav id="menu">
+            <ul class="menu">
+                <li><a href="Default.aspx">Home</a></li>
+                <li>
+                    <a href="Genre.aspx?catId=11" id="genre">Genres</a>
+                </li>
+                <li><a href="About.html">About WRadio</a></li>
+                <li><a href="Documentation.html">Documentation</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="title">
+        <h1 id="projName" align="center">PROJECT REPORT <br> ON <br> <i>WRadio</i> - Your own music world  </h1>
+    </div>
+    <br>
+    <h2 align="center"> <u>Author</u> </h2>
+    <h1 align="center"> Atif Khan </h1>
+    <div id="abstract">
+        <h2><u>Abstract</u></h2><br />
+
+        <p>
+            We live in the age of internet and internet radio is becoming more and more popular. Over the last few years, with the growth of technology and streaming media, 
+            internet radio has emerged as an excellent platform for providing  wide range of choices to user from music, news,commentry to live talk shows.
+             <a href="Default.aspx"><b>WRadio</b></a> is a webcasting application that hosts internet radio stations from all around the world. The application pulls the data using an open source API provided by <b> Dirble</b>.
+            It lets you select and stream from thousands of internet radio stations freely available over internet supported by dirble API.
+        </p>
+        <br /> <hr /><br />
+    </div>
+    <br />
+    <div id="toc">
+        <h2><u>Table of Contents</u></h2><br />
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li> <a href="#design">Design of WRadio</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#fscope">Future Scope</a></li>
+            <li><a href="#credits">Credits and thanks</li>
+        </ul>  </div>
+    
+    <div id="intro">
+        <h2>Introduction</h2><br />
+        <p>
+            <a href="Default.aspx"><b>WRadio</b></a> plays audio from internet radio streams provided by the API. For each station it displays the country from which
+            that radio station is broadcasting along with the flag of the country. Also, when a radio station is selected for playing, the category of the music the station is playing is displayed.
+            It also shows the bit-rate of audio the particular station is playing. If the station provides any description, the description will be displayed on the clicked radio stations. 
+        </p>
+        <br />   <hr />  <br />
+    </div>
+    <div id="design">
+        <h2>Design of WRadio</h2><br />
+        <p>
+            <a href="Default.aspx"><b>WRadio</b></a> has been designed using HTML5, CSS3, JavaScript and jQuery only. The data source is an API provided by internet radio hosting website
+            called <a href="https://dirble.com/"><b>Dirble</b></a>. Apart from the basic layout of each page, all the API data rendering on the webpage has been handled dynamically
+            using jQuery and styled using CSS.
+            
+            <h3><u>Dirble API:</u></h3><br />
+            <p>
+                <a href="Default.aspx"><b>WRadio</b></a> makes an AJAX API call to dirble server using an API key. The API key provides access to station data according to
+                categories/Genre. The data response received as a result of API call is in the format of JSON. jQUery code written in WRadio parses the JSON data received
+                and process the relevant fields to be rendered on the webpage.
+         </p>
+        <h3><u>Country Data:</u></h3><br />
+        <p>
+            The API response contains the country data in the form of two character ISO code. jQuery code written in WRadio then, uses this country code and makes another AJAX call to
+            a text file stored on the server containing delimited ISO country codes and country names along with the continent names. The country data pulled from this text
+            file is then parsed and the respective country name is extracted to render on the web page.
+        </p>
+        <h3><u>Country Flags:</u></h3><br />
+        <p>
+            The station API response had low resolution country flags. The country flags on WRadio are pulled from another website <a href="http://www.geonames.org/"><b>GeoNames</b></a>.
+            The two character country code returned in API response is concatenated with GeoNames flags link to get the respective country flag dynamically for each station. jQuery concatenates the
+            country code to the GeoName flag link to get the high resolution flags. The height and width of the flags has been handled using CSS.
+        </p>
+        <h3><u>Single Station Display:</u></h3><br />
+        <p> 
+          After clicking play on a particular station from a list of stations, a &lt;div&gt; overlay is displayed for each radio station. The single station &lt;div&gt; has been designed completely
+            using CSS and the appearance and closure have been handled using jQuery and CSS.
+        </p>
+        <br />   <hr /><br />
+    </div>
+    <div id="features">
+        <h2>Features</h2><br />
+        <ul id="featureList">
+            <li>
+                <b><i>Random Stations:</i></b> Each time the home page of the application is loaded, a set of random stations is retreived through API call and displayed on the screen.
+                jQuery code creates a random number within the range of station pages and retrieves  a set of stations.
+            </li>
+            <li><b><i>Genre List:</i></b> User can click the Genre link from menu to get the list of Genre's available. The Genre list is generated dynamically through the API call. Genre list is populated
+            using API call in order to get the up to date Genre list from Dirble.</li>
+            <li>
+                <b><i> Station details:</i></b> A radio station when played, displays an image of the station if available, the website link to the broadcasting radio station, stream URL, bitrate of the audio being broadcasted,
+                country from where broadcasting is taking place, HTML5 audio controls and the description of the station as to what kind of music the station plays If a particular station is down, an alert is displayed
+                to notify the end user that the station is down.
+            </li>
+            <li>
+                <b><i>LightBox effect:</i></b> On selecting a particular radio station to be played, the selected station is displayed and the rest of the screen darkens. This effect has been implemented using jQuery and
+                CSS overlay. On playing a station, the single station panel is generated dynamically and the hidden overlay is activated such that the radio station panel appears on top of the screen darkening the rest of the screen. 
+            </li>
+            <li>
+                <b><i>Search Bar:</i></b> The search bar lets user search any string that user want. The user can enter country, station and cateogory name in the search bar. The search bar will send a request to Dirble API
+                and the matching results will be rendered on the screen.
+              </li>
+            <li>
+                <b><i>Pagination:</i></b> The Genre page and Search page provides the user with the option of navigating the pages using pagination. The pagination has been implemented in jQuery. It provides the user ease of 
+                navigating through different pages. The API returns maximum of 30 stations per page hence in successive pages the number of stations might vary.
+            </li>
+        </ul>
+        <br />  <hr /><br />
+    </div>
+    <div id="fscope">
+        <h2>Future Scope</h2><br />
+        <ul>
+            <li>
+                <p> Feature to display and play the music stations by Countries and Continents. By extending the API call and manipulating the data received, it is possible to display
+                the stations by country and continents.</p> <br />
+            </li>
+            <li>
+                <p> History of the music or programs broadcasted by the selected station.</p>
+            </li>
+        </ul>
+        <br />   <hr /><br />
+        </div>
+    <div id="credits">
+        <h2>Credits and thanks</h2><br />
+        <p>
+            <b>WRadio couldn't have been made without the support and guidance of <a href="http://net4.ccs.neu.edu/home/rasala" target="_blank"> <b>Prof. Richard Rasla</b></a></b>.<br />
+            I would like to thank TA-  <a href="http://net4.ccs.neu.edu/home/pruthvi/" target="_blank"><b>Pruthvi Kumar</b></a> for giving me constructive feedbacks
+            during the entire course of CS5610 and motivating and guiding me at each step of my project. I'd like to thank below teams for providing excellent support and knowledge base
+            in creating this website.
+        </p>
+        <ul>
+            <li>
+               <a href="http://dirble.com"> Dirble</a>
+            </li>
+            <li>
+                <a href="http://geonames.org">GeoNames</a>
+            </li>
+            <li>
+                <a href="http://w3schools.com">W3Schools</a>
+            </li>
+            <li>
+                <a href="https://msdn.microsoft.com/">MSDN</a>
+            </li>
+            <li>
+                <a href="https://jquery.com/">MSDN</a>
+            </li>
+        </ul>
+        <br /> <hr /><br />
+    </div>
+    <div id="pageFooter">
+        <p>&copy; WRadio, All rights reserved</p>
+    </div>
+
+</body>
+
+</html>

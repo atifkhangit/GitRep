@@ -1,0 +1,386 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+#top-bar {
+    min-height: 50px;
+    margin-top: 1%;
+    width: 100%;
+}
+#logo {
+    float: left;
+    height: auto;
+    opacity: 0.8;
+    padding-left: 1px;
+    border-radius: 35px;
+    margin-top: 1px;
+    margin-left: 1px;
+    display: inline;
+}
+nav {
+    height: 50px;
+    margin-left: 14%;
+    margin-top: 1px;
+}
+.menu {
+    list-style: none;
+    margin: 0px;
+    text-align: center;
+    float: left;
+    display: block;
+}
+.menu > li {
+    background: black;
+    float: left;
+    height: auto;
+    padding: 5px;
+    position: relative;
+    width: 250px;
+}
+.menu > li:hover {
+    background: highlight;
+    border: 1px solid;
+    border-color: red;
+}
+.menu a {
+    color: #FFFFFF;
+    display: block;
+    font: bold 25px Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #000000;
+}
+#leftBarWrapper {
+    clear: both;
+    float: left;
+    display: block;
+    height: auto;
+    width: auto;
+    margin-top: 1%;
+}
+#genreList,
+.genreClass,
+#countryList,
+.countryClass {
+    left: 0px;
+    list-style: none;
+    padding: 0px;
+}
+#genreList a:visited,
+#genreList a:link {
+    color: #FF0000;
+    text-decoration: none;
+}
+.genreClass,
+.countryClass {
+    font: bold 16px Arial, Helvetica, sans-serif;
+    outline: 1px solid;
+    outline-color: brown;
+    padding-bottom: 3px;
+    padding-left: 22px;
+    padding-top: 3px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.genreClass > a,
+.countryClass > a {
+    text-decoration: none;
+}
+#genreList li:hover,
+#countryList li:hover {
+    background-color: Highlight;
+}
+.allStations h3 {
+    float: left;
+    position: relative;
+    opacity: 0;
+}
+.stationList > li.hidden {
+    opacity: 0.2;
+    pointer-events: none;
+}
+.stationList .stationPhoto {
+    box-shadow: 0 0 20px 8px #f3f3f3 inset;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 25px;
+    padding: 20px 0;
+    text-align: center;
+    width: 90%;
+}
+.stationList h2 {
+    display: block;
+    font-size: 18px;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.stationList h2 a {
+    color: #2B2E31;
+    text-decoration: none;
+}
+.stationList .stationDescription {
+    color: #5d5d5d;
+    font-size: 14px;
+    line-height: 1.45;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.stationList .stationDescription li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.stationList .stationDescription li:first-child {
+    display: block;
+}
+.stationList .stationDescription li span {
+    font-weight: bold;
+}
+.stationList button {
+    float: left;
+    position: relative;
+    background-color: #87bae1;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    height: 32px;
+    padding: 10px;
+    width: 100%;
+}
+.searchBar {
+    background-color: #eaf8fc;
+    background-image: linear-gradient(#fff, #d4e8ec);
+    border-radius: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;
+    min-width: 99%;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 2px;
+    float: left;
+    margin-left: 0.5%;
+    margin-top: 1%;
+    overflow: hidden;
+    z-index: 1;
+}
+#searchInput,
+#searchButton {
+    float: left;
+}
+#searchInput {
+    padding: 5px 9px;
+    height: 30px;
+    max-width: 84%;
+    width: 84%;
+    border: 1px solid #a4c3ca;
+    font: 18px Arial, Helvetica, sans-serif;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    margin-top: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+    margin-left: 5px;
+}
+#searchButton {
+    background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 50px 50px 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 30px;
+    max-width: 15%;
+    min-width: 15%;
+    margin-top: 2px;
+    margin-left: 0px;
+    cursor: pointer;
+    font: 18px Arial, Helvetica, sans-serif;
+    color: #23441e;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+#searchButton:hover {
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}
+#searchButton:active {
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+#linkError {
+    float: left;
+    width: auto;
+    height: auto;
+    font: bold 24px Arial, Helvetica, sans-serif;
+    color: red;
+    display: block;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+#caption {
+    float: left;
+    top: 25px;
+    border: 1px;
+    height: 40px;
+    position: relative;
+    background-color: white;
+    width: 250px;
+    left: 45px;
+    font: bold 35px Arial, Helvetica, sans-serif;
+    opacity: 0.2;
+}
+#parentWrapper {
+    width: auto;
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+stationList .stationDescription li:first-child {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#randomize button {
+    float: left;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 1%;
+    border: 10px solid;
+    border-color: #c4d9df #a4c3ca #83afb7;
+    font: bold 24px Arial, Helvetica, sans-serif;
+    color: brown;
+}
+.navigationHandler {
+    display: block;
+    margin-top: 1%;
+    max-width: 100%;
+    width: 30%;
+    margin-left: 75%;
+}
+#navigationList {
+    float: left;
+    display: block;
+    width: 60%;
+    list-style: none;
+}
+#navigationList li {
+    float: left;
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+#navigationList li a {
+    text-decoration: none;
+    font: bold 18px Arial, Helvetica, sans-serif;
+}
+#navigationList li a:visited,
+#navigationList li a:link {
+    color: blue;
+}
+#navigationList li a:hover {
+    color: red;
+}
+#prev,
+#nxt {
+    float: left;
+    display: block;
+    padding: 0.5%;
+    margin-left: 4%;
+    max-width: 20%;
+    min-width: 58%;
+    border-radius: 35px;
+    margin: 5px;
+}
+@media screen and (max-width: 570px) {
+    .menu a {
+        font-size: 100% !important;
+    }
+    #randomize button {
+        width: 100%;
+        margin-left: 0%;
+        font-size: 100%;
+    }
+    .searchBar {
+        max-width: 80%;
+        min-width: 98%;
+    }
+    .menu {
+        float: none;
+        margin: 0px;
+    }
+    #searchInput {
+        width: 65%;
+        font-size: 100% !important;
+    }
+    nav {
+        margin-left: 4%;
+    }
+    #searchButton {
+        width: 30%;
+        max-width: 100%;
+        font-size: 100% !important;
+    }
+    .stationList {
+        margin-left: 10% !important;
+    }
+    .stationList > li {
+        margin-left: 30px !important;
+        width: 180px !important;
+    }
+    #parentWrapper {
+        margin-left: 2%;
+    }
+    #singleStation {
+        max-width: 87% !important;
+        left: 7% !important;
+    }
+    audio {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+    singleStationWrapper {
+        max-height: 80% !important;
+    }
+    #leftBarWrapper {
+        margin-left: 20%;
+    }
+    .navigationHandler {
+        margin-left: 5%;
+        width: 100%;
+    }
+    #prev,
+    #nxt {
+        min-width: 87%;
+    }
+    #navigationList {
+        width: 81%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    nav {
+        width: 51%;
+    }
+}
+footer {
+    display: none;
+    float: left;
+    margin-left: 20%;
+    margin-top: 5%;
+}

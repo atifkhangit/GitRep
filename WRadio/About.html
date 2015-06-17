@@ -1,0 +1,122 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <style type="text/css">
+        @media screen and (max-width:570px) {
+            body, p {
+                width: 90%;
+                font-size: 100% !important;
+            }
+
+            .menu a {
+                font-size: 100% !important;
+            }
+        }
+
+        body, p {
+            font: larger;
+            font-size: larger;
+        }
+
+        #content a:visited,
+        #content a:link, #doc a:visited, #doc a:link {
+            color: #FF0000;
+            text-decoration: none;
+        }
+
+        #content {
+            float: left;
+            margin-top: 3%;
+            margin-left: 6%;
+            border: 2px solid;
+            border-color: aliceblue;
+            background-color: white;
+            border-radius: 5px;
+            color: black;
+            max-width: 100%;
+            width: 74%;
+            padding: 25px;
+        }
+
+        #credits {
+            list-style: circle;
+        }
+
+        #footer {
+            clear: both;
+            bottom: 1px;
+            margin-left: 34%;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-bar">
+        <div id="logo">
+            <img src="images/logo.jpg" alt="logoimage" width="100" height="50" />
+        </div>
+        <nav id="menu">
+            <ul class="menu">
+                <li>
+                    <a href="Default.aspx">Home</a>
+                </li>
+                <li>
+                    <a href="Genre.aspx?catId=11" id="genre">Genres</a>
+                </li>
+                <li>
+                    <a href="About.html">About WRadio</a>
+                </li>
+                <li>
+                    <a href="Documentation.html">Documentation</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+        <h2>About Me:</h2>
+        <p>
+            My name is
+            <b>Atif Khan</b>. I am currently pursuing a Master's degree in Computer Science.
+            I have created this website as a part of academic course. The website has been developed
+            purely using HTML5,CSS3,Javascript, jQuery and JSON. 
+        </p>
+        <br />
+        <h2>What is WRadio:</h2>
+        <p>
+            <b>
+                <i>WRadio</i>
+            </b>(Web Radio) is  a webcasting site. The site provide access to internet radio stations broadcasting
+            across the world in different languages. The home page displays set of random stations for any Genre from Classical, Rock, Jazz
+            to country music and live broadcasting. You can select a number of stations based on the Genre. The data source for the streaming of
+            radio station is
+            <b>
+                <i>"Dirble API"</i>
+            </b>.
+
+        </p>
+        <br />
+        <h2>Credits for this website:</h2>
+        <ul id="credits">
+            <li>
+                <span>
+                    <a href="http://www.ccs.neu.edu/home/rasala/" target="_blank">Professor Richard Rasala:</a>Thank you so much for guiding me all the way through this course.
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a href="https://dirble.com/" target="_blank">DIRBLE:</a>Thank you for providing such a fantastic API.
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a href="http://www.geonames.org/" target="_blank">GeoNames:</a>
+                </span>Thank you for providing the high quality country flag URL's
+            </li>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>&copy; WRadio, All rights reserved.
+    </div>
+</body>
+</html>

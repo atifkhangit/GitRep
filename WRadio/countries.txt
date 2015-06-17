@@ -1,0 +1,196 @@
+africa;AO,Angola
+africa;BF,Burkina Faso
+africa;BI,Burundi
+africa;BJ,Benin
+africa;BW,Botswana
+africa;CD,Congo,The Democratic Republic of the
+africa;CF,Central African Republic
+africa;CG,Congo
+africa;CI,Côte d'Ivoire
+africa;CM,Cameroon
+africa;CV,Cape Verde
+africa;DJ,Djibouti
+africa;DZ,Algeria
+africa;EG,Egypt
+africa;ER,Eritrea
+africa;ET,Ethiopia
+africa;GA,Gabon
+africa;GH,Ghana
+africa;GM,Gambia
+africa;GN,Guinea
+africa;GQ,Equatorial Guinea
+africa;GW,Guinea-Bissau
+africa;KE,Kenya
+africa;KM,Comoros
+africa;LR,Liberia
+africa;LS,Lesotho
+africa;LY,Libya
+africa;MA,Morocco
+africa;MG,Madagascar
+africa;ML,Mali
+africa;MR,Mauritania
+africa;MU,Mauritius
+africa;MW,Malawi
+africa;MZ,Mozambique
+africa;NA,Namibia
+africa;NE,Niger
+africa;NG,Nigeria
+africa;RW,Rwanda
+africa;SC,Seychelles
+africa;SD,Sudan
+africa;SL,Sierra Leone
+africa;SN,Senegal
+africa;SO,Somalia
+africa;ST,Sao Tome and Principe
+africa;SZ,Swaziland
+africa;TD,Chad
+africa;TG,Togo
+africa;TN,Tunisia
+africa;TZ,Tanzania,United Republic of
+africa;UG,Uganda
+africa;ZA,South Africa
+africa;ZM,Zambia
+africa;ZW,Zimbabwe
+asia;AF,Afghanistan
+asia;BD,Bangladesh
+asia;BH,Bahrain
+asia;BN,Brunei Darussalam
+asia;BT,Bhutan
+asia;CN,China
+asia;HK,Hong Kong
+asia;ID,Indonesia
+asia;IL,Israel
+asia;IN,India
+asia;IQ,Iraq
+asia;IR,Iran
+asia;JO,Jordan
+asia;JP,Japan
+asia;KG,Kyrgyzstan
+asia;KH,Cambodia
+asia;KP,North Korea 
+asia;KR,South Korea 
+asia;KW,Kuwait
+asia;KZ,Kazakhstan
+asia;LA,Lao
+asia;LB,Lebanon
+asia;LK,Sri Lanka
+asia;MM,Myanmar
+asia;MN,Mongolia
+asia;MV,Maldives
+asia;MY,Malaysia
+asia;NP,Nepal
+asia;OM,Oman
+asia;PH,Philippines
+asia;PK,Pakistan
+asia;QA,Qatar
+asia;RU,Russian Federation
+asia;SA,Saudi Arabia
+asia;SG,Singapore
+asia;SY,Syria
+asia;TH,Thailand
+asia;TJ,Tajikistan
+asia;TM,Turkmenistan
+asia;TR,Turkey
+asia;ae,United Arab Emirates
+asia;UZ,Uzbekistan
+asia;VN,Vietnam
+asia;YE,Yemen
+europe;AL,Albania
+europe;AD,Andorra
+europe;AT,Austria
+europe;BY,Belarus
+europe;BE,Belgium
+europe;BA,Bosnia and Herzegovina
+europe;BG,Bulgaria
+europe;HR,Croatia
+europe;CY,Cyprus
+europe;CZ,Czech Republic
+europe;DK,Denmark
+europe;EE,Estonia
+europe;FO,Faroe Islands
+europe;FI,Finland
+europe;FR,France
+europe;DE,Germany
+europe;GI,Gibraltar
+europe;GR,Greece
+europe;HU,Hungary
+europe;IS,Iceland
+europe;IE,Ireland
+europe;IT,Italy
+europe;LV,Latvia
+europe;LI,Liechtenstein
+europe;LT,Lithuania
+europe;LU,Luxembourg
+europe;MK,Macedonia
+europe;MT,Malta
+europe;MD,Moldova
+europe;MC,Monaco
+europe;NL,Netherlands
+europe;NO,Norway
+europe;PL,Poland
+europe;PT,Portugal
+europe;RO,Romania
+europe;RU,Russia
+europe;SM,San Marino
+europe;RS,Serbia
+europe;SK,Slovakia
+europe;SI,Slovenia
+europe;ES,Spain
+europe;SE,Sweden
+europe;CH,Switzerland
+europe;UA,Ukraine
+europe;GB,United Kingdom
+europe;VA,Vatican city
+europe;RS,Yugoslavia
+europe;IM,Isle of Man
+europe;RS,Kosovo
+europe;ME,Montenegro
+north-america;AG,Antigua and Barbuda
+north-america;BS,Bahamas
+north-america;BB,Barbados
+north-america;BZ,Belize
+north-america;CA,Canada
+north-america;CR,Costa Rica
+north-america;CU,Cuba
+north-america;DM,Dominica
+north-america;DO,Dominican Republic
+north-america;SV,El Salvador
+north-america;GD,Grenada
+north-america;GT,Guatemala
+north-america;HT,Haiti
+north-america;HN,Honduras
+north-america;JM,Jamaica
+north-america;MX,Mexico
+north-america;NI,Nicaragua
+north-america;PA,Panama
+north-america;KN,Saint Kitts and Nevis
+north-america;LC,Saint Lucia
+north-america;VC,Saint Vincent and the Grenadines
+north-america;TT,Trinidad and Tobago
+north-america;US,United States
+oceania;AU,Australia
+oceania;FJ,Fiji
+oceania;FM,Federated States of Micronesia
+oceania;KI,Kiribati
+oceania;MH,Marshall Islands
+oceania;NR,Nauru
+oceania;NZ,New Zealand
+oceania;PG,Papua New Guinea
+oceania;PW,Palau
+oceania;SB,Solomon Islands
+oceania;TO,Tonga
+oceania;TV,Tuvalu
+oceania;VU,Vanuatu
+oceania;WS,Samoa
+south-amerika;AR,Argentina
+south-amerika;BO,Bolivia
+south-amerika;BR,Brazil
+south-amerika;CL,Chile
+south-amerika;CO,Colombia
+south-amerika;EC,Ecuador
+south-amerika;GY,Guyana
+south-amerika;PE,Peru
+south-amerika;PY,Paraguay
+south-amerika;SR,Suriname
+south-amerika;UY,Uruguay
+south-amerika;VE,Venezuela
